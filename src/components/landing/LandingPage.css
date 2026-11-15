@@ -1,0 +1,286 @@
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  padding-block: 3rem;
+}
+
+.planetary-visual {
+  position: absolute;
+  top: 52%;
+  right: -9%;
+  z-index: 1;
+  width: min(82vw, 1040px);
+  height: min(92vh, 850px);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.planet-earth {
+  position: absolute;
+  right: -18%;
+  bottom: -7%;
+  width: 88%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid rgba(198, 224, 255, 0.32);
+  border-radius: 50%;
+  background: #020408;
+  box-shadow:
+    0 0 24px rgba(149, 209, 255, 0.6),
+    0 0 90px rgba(49, 142, 255, 0.28);
+}
+
+.planet-earth img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.58);
+}
+
+.planetary-orbits {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.planetary-orbits path {
+  fill: none;
+  stroke: rgba(248, 236, 218, 0.6);
+  stroke-width: 1;
+  stroke-dasharray: 3 6;
+}
+
+.planetary-orbits circle {
+  fill: #f97316;
+  stroke: rgba(255, 245, 232, 0.9);
+  stroke-width: 2;
+}
+
+.planet-marker {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #f8f3e8;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.planet-marker > img,
+.moon-photo,
+.mars-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid rgba(255, 235, 206, 0.45);
+  border-radius: 50%;
+  background-color: #020408;
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.12);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.planet-marker > img {
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.moon-photo,
+.mars-photo {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mars-photo {
+  background-size: 160% auto;
+}
+
+.moon-photo {
+  background-size: 280% auto;
+  background-position: 98% 96%;
+  filter: brightness(1.55);
+}
+
+.planet-label {
+  margin-top: 0.6rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-shadow: 0 1px 8px #020408;
+}
+
+.planet-marker:hover > img,
+.planet-marker:hover .moon-photo,
+.planet-marker:hover .mars-photo,
+.planet-marker.is-selected > img,
+.planet-marker.is-selected .moon-photo,
+.planet-marker.is-selected .mars-photo {
+  transform: scale(1.08);
+  border-color: #fb923c;
+  box-shadow:
+    0 0 20px rgba(249, 115, 22, 0.35),
+    0 0 42px rgba(157, 198, 255, 0.2);
+}
+
+.planet-marker:focus-visible {
+  outline: 2px solid #fb923c;
+  outline-offset: 6px;
+  border-radius: 50%;
+}
+
+.moon-marker {
+  top: 10%;
+  left: 20%;
+  width: 17%;
+}
+
+.mars-marker {
+  top: 7%;
+  right: 14%;
+  width: 20%;
+}
+
+.terrain-preview {
+  position: absolute;
+  right: 3%;
+  bottom: 8%;
+  z-index: 5;
+  width: min(32%, 320px);
+  overflow: hidden;
+  border: 1px solid rgba(236, 225, 209, 0.48);
+  border-radius: 7px;
+  background: rgba(4, 7, 10, 0.94);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  color: #ede5d9;
+  font-size: 0.65rem;
+}
+
+.terrain-preview-heading,
+.terrain-preview-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55rem;
+  padding: 0.62rem 0.75rem;
+}
+
+.terrain-preview-heading {
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(236, 225, 209, 0.2);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #f97316;
+  box-shadow: 0 0 10px rgba(249, 115, 22, 0.8);
+}
+
+.terrain-preview > img {
+  display: block;
+  width: 100%;
+  height: 116px;
+  object-fit: cover;
+  transform: scaleY(1.8);
+  transform-origin: top;
+}
+
+.terrain-preview-footer {
+  border-top: 1px solid rgba(236, 225, 209, 0.2);
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  z-index: 4;
+  color: rgba(235, 230, 219, 0.72);
+  font-size: 0.52rem;
+  letter-spacing: 0.28em;
+}
+
+@media (max-width: 1023px) {
+  .hero-copy {
+    padding-block: 2rem;
+  }
+
+  .planetary-visual {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: min(100%, 720px);
+    height: min(72vw, 520px);
+    align-self: center;
+    margin-top: -1rem;
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-copy {
+    flex: none;
+    width: 100%;
+    padding-block: 1.75rem 0.5rem;
+  }
+
+  .planetary-visual {
+    width: min(100%, 520px);
+    height: min(88vw, 440px);
+  }
+
+  .planet-earth {
+    right: 0;
+    bottom: -12%;
+    width: 82%;
+  }
+
+  .moon-marker {
+    top: 6%;
+    left: 12%;
+    width: 19%;
+  }
+
+  .mars-marker {
+    top: 5%;
+    right: 3%;
+    width: 22%;
+  }
+
+  .terrain-preview {
+    right: 0;
+    bottom: 2%;
+    width: 42%;
+    font-size: 0.56rem;
+  }
+
+  .terrain-preview > img {
+    height: 76px;
+    transform: scaleY(1.7);
+  }
+
+  .terrain-preview-heading,
+  .terrain-preview-footer {
+    padding: 0.45rem 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planet-marker > img,
+  .moon-photo,
+  .mars-photo {
+    transition: none;
+  }
+}

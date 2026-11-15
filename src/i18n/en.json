@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "workspace": "Workspace",
+    "explorer": "Explorer",
+    "analysis": "Analysis",
+    "report": "Report",
+    "status": "Status"
+  },
+  "landing": {
+    "tagline": "NASA Space Apps Challenge",
+    "title1": "Find",
+    "title2": "Earth Analogues",
+    "title3": "for Space Missions",
+    "subtitle": "Match lunar and Martian regions to the most similar environments on Earth using terrain analysis and AI-powered ranking.",
+    "cta": "Launch Workspace",
+    "choosePlanet": "Choose your target planet",
+    "chooseMission": "Choose your mission type"
+  },
+  "left": {
+    "targetPlanet": "Target Planet",
+    "regionSelection": "Region Selection",
+    "selectOnMap": "Select on Map",
+    "enterCoords": "Enter Coordinates",
+    "geometry": "Geometry",
+    "point": "Point",
+    "circle": "Circle",
+    "rectangle": "Rectangle",
+    "polygon": "Polygon",
+    "missionParams": "Mission Parameters",
+    "elevWeight": "Elevation Weight",
+    "slopeWeight": "Slope Weight",
+    "morphWeight": "Morphology Weight",
+    "reliefWeight": "Relief Weight",
+    "aridityWeight": "Aridity Weight",
+    "tempWeight": "Temperature Weight",
+    "roughnessWeight": "Roughness Weight",
+    "reset": "Reset",
+    "confirmTarget": "Confirm Target",
+    "lambda": "Diversity (λ)",
+    "missionType": "Mission Type",
+    "rover": "Rover",
+    "base": "Base",
+    "exploration": "Exploration",
+    "nSites": "Number of Sites"
+  },
+  "right": {
+    "analogueDiscovery": "Analogue Discovery",
+    "bestMatches": "Best Matches",
+    "similarity": "Similarity",
+    "terrainComparison": "Terrain Comparison",
+    "terrainCoverage": "Terrain Coverage",
+    "confidence": "Confidence",
+    "scientificContext": "Scientific Context",
+    "exportPdf": "Export PDF",
+    "viewDetails": "View Details",
+    "score": "Score",
+    "highSimilarity": "High Similarity",
+    "mediumSimilarity": "Medium Similarity",
+    "lowSimilarity": "Low Similarity"
+  },
+  "features": {
+    "elevation_mean": "Mean Elevation",
+    "relief_std": "Relief Std Dev",
+    "slope_mean": "Mean Slope",
+    "slope_p90": "Slope P90",
+    "roughness": "Roughness",
+    "temp_mean": "Mean Temperature",
+    "temp_min": "Min Temperature",
+    "temp_max": "Max Temperature",
+    "aridity": "Aridity Index",
+    "terrainClass": "Terrain Class",
+    "gravity": "Gravity",
+    "atmosphere": "Atmosphere"
+  },
+  "limits": {
+    "gravity": "Gravity",
+    "atmosphere": "Atmosphere",
+    "radiation": "Radiation",
+    "dust": "Dust",
+    "where_breaks": "Where the analogy breaks"
+  },
+  "validation": {
+    "title": "Validation",
+    "recall1": "Recall@1",
+    "recall3": "Recall@3",
+    "recall5": "Recall@5",
+    "meanRank": "Mean Rank",
+    "hit": "Hit",
+    "miss": "Miss"
+  },
+  "map": {
+    "layers": "Layers",
+    "opacity": "Opacity",
+    "blueMarble": "Blue Marble",
+    "landTemp": "Land Temperature",
+    "airTemperature": "2 m Air Temperature (Monthly)",
+    "hillshade": "Hillshade",
+    "elevation": "Elevation",
+    "slope": "Slope",
+    "sites": "Sites",
+    "target": "Target"
+  },
+  "planet": {
+    "moon": "Moon",
+    "mars": "Mars",
+    "earth": "Earth",
+    "moonSub": "Lunar surface analogues",
+    "marsSub": "Martian terrain analogues"
+  },
+  "confidence": {
+    "title": "Confidence Analysis",
+    "runs": "Monte Carlo Runs",
+    "stability": "Rank Stability",
+    "interval": "Score Interval"
+  }
+}

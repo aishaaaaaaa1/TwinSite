@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "workspace": "Espace de travail",
+    "explorer": "Explorateur",
+    "analysis": "Analyse",
+    "report": "Rapport",
+    "status": "Statut"
+  },
+  "landing": {
+    "tagline": "NASA Space Apps Challenge",
+    "title1": "Trouver",
+    "title2": "des Analogues Terrestres",
+    "title3": "pour les Missions Spatiales",
+    "subtitle": "Associez les régions lunaires et martiennes aux environnements terrestres les plus similaires grâce à l'analyse de terrain et au classement par IA.",
+    "cta": "Lancer l'espace de travail",
+    "choosePlanet": "Choisissez votre planète cible",
+    "chooseMission": "Choisissez votre type de mission"
+  },
+  "left": {
+    "targetPlanet": "Planète cible",
+    "regionSelection": "Sélection de région",
+    "selectOnMap": "Sélectionner sur la carte",
+    "enterCoords": "Entrer les coordonnées",
+    "geometry": "Géométrie",
+    "point": "Point",
+    "circle": "Cercle",
+    "rectangle": "Rectangle",
+    "polygon": "Polygone",
+    "missionParams": "Paramètres de mission",
+    "elevWeight": "Poids élévation",
+    "slopeWeight": "Poids pente",
+    "morphWeight": "Poids morphologie",
+    "reliefWeight": "Poids relief",
+    "aridityWeight": "Poids aridité",
+    "tempWeight": "Poids température",
+    "roughnessWeight": "Poids rugosité",
+    "reset": "Réinitialiser",
+    "confirmTarget": "Confirmer la cible",
+    "lambda": "Diversité (λ)",
+    "missionType": "Type de mission",
+    "rover": "Rover",
+    "base": "Base",
+    "exploration": "Exploration",
+    "nSites": "Nombre de sites"
+  },
+  "right": {
+    "analogueDiscovery": "Découverte d'analogues",
+    "bestMatches": "Meilleures correspondances",
+    "similarity": "Similarité",
+    "terrainComparison": "Comparaison de terrain",
+    "terrainCoverage": "Couverture de terrain",
+    "confidence": "Confiance",
+    "scientificContext": "Contexte scientifique",
+    "exportPdf": "Exporter PDF",
+    "viewDetails": "Voir les détails",
+    "score": "Score",
+    "highSimilarity": "Haute similarité",
+    "mediumSimilarity": "Similarité moyenne",
+    "lowSimilarity": "Faible similarité"
+  },
+  "features": {
+    "elevation_mean": "Élévation moyenne",
+    "relief_std": "Écart-type du relief",
+    "slope_mean": "Pente moyenne",
+    "slope_p90": "Pente P90",
+    "roughness": "Rugosité",
+    "temp_mean": "Température moyenne",
+    "temp_min": "Température min",
+    "temp_max": "Température max",
+    "aridity": "Indice d'aridité",
+    "terrainClass": "Classe de terrain",
+    "gravity": "Gravité",
+    "atmosphere": "Atmosphère"
+  },
+  "limits": {
+    "gravity": "Gravité",
+    "atmosphere": "Atmosphère",
+    "radiation": "Radiation",
+    "dust": "Poussière",
+    "where_breaks": "Où l'analogie s'arrête"
+  },
+  "validation": {
+    "title": "Validation",
+    "recall1": "Rappel@1",
+    "recall3": "Rappel@3",
+    "recall5": "Rappel@5",
+    "meanRank": "Rang moyen",
+    "hit": "Réussi",
+    "miss": "Raté"
+  },
+  "map": {
+    "layers": "Couches",
+    "opacity": "Opacité",
+    "blueMarble": "Bille bleue",
+    "landTemp": "Température terrestre",
+    "airTemperature": "Température de l’air à 2 m (mensuelle)",
+    "hillshade": "Ombrage",
+    "elevation": "Élévation",
+    "slope": "Pente",
+    "sites": "Sites",
+    "target": "Cible"
+  },
+  "planet": {
+    "moon": "Lune",
+    "mars": "Mars",
+    "earth": "Terre",
+    "moonSub": "Analogues de la surface lunaire",
+    "marsSub": "Analogues du terrain martien"
+  },
+  "confidence": {
+    "title": "Analyse de confiance",
+    "runs": "Simulations Monte Carlo",
+    "stability": "Stabilité du rang",
+    "interval": "Intervalle de score"
+  }
+}
